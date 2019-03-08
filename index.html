@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HappyFit</title>
+</head>
+<body>
+<h1>Please log in to FitBit</h1>
+
+<button id="myButton">Login FitBit</button>
+<br><br><br><br>
+Steps in a day:
+<br><input type="text" id="StepsDay"><br>
+
+<script type="text/javascript">
+    console.log('Client-side code running');
+
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', function () {
+        // document.location.href = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=22DK2T&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Ftoken%2Fcode&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=604800';
+         document.location.href = 'https://www.fitbit.com/oauth2/authorize?response_type=code&client_id=22DK2T&scope=activity%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&prompt=none';
+
+        console.log('Button was clicked');
+    });
+</script>
+
+
+</body>
+</html>
